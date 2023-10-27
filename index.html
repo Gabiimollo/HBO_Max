@@ -3,74 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ver películas y series online | HBO Max Argentina</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./carrousel.js"></script>
 </head>
 <body>
     <!-- Free Episodes Section -->
-    <section>
-        <p>Episodios gratis, sin necesidad de suscripción</p>
-    <!-- CARROUSEl DE CARDS -->
-        <div class="carrousel_container">
-            <div class="carrousel_slides">
+    <section class="container__text">
+        <h2 class="text">Episodios gratis, sin necesidad de suscripción</h2>
+        
+        <!-- CARROUSEL DE CARDS -->
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
 
-                <div class="slide1">
-                    <img src="./images/Carrousel_cards/30_monedas.png" alt="30-monedas">
-                    <p>30 monedas</p>
-                    <p>Ver gratis</p>
-                </div>
-
-                <div class="slide2">
-                    <img src="./images/Carrousel_cards/doom_patrol.png" alt="Doom Patrol">
-                    <p>Doom Patrol</p>
-                    <p>Ver gratis</p>
-                </div>
-
-                <div class="slide3">
-                    <img src="./images/Carrousel_cards/nuestra_bandera_es_de_muerte.png" alt="Nuestra Bandera es de Muerte">
-                    <p>Nuestra Bandera es de Muerte</p>
-                    <p>Ver gratis</p>
-                </div>
-
-                <div class="slide4">
-                    <img src="./images/Carrousel_cards/rick_and_morty.png" alt="Rick and Morti">
-                    <p>Rick and Morti</p>
-                    <p>Ver gratis</p>
-                </div>
-                
-                <div class="slide5">
-                    <img src="./images/Carrousel_cards/the_last_of_us.png" alt="The Last of Us">
-                    <p>The Last of Us</p>
-                    <p>Ver gratis</p>
+                <div class="carousel-item active">
+                    <div class="carrousel__container">
+                        <div class="carrousel__slide">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/30_monedas.png" alt="30-monedas">
+                            <p class="carrousel__slide-title">30 monedas</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                        <div class="carrousel__slide">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/doom_patrol.png" alt="Doom Patrol">
+                            <p class="carrousel__slide-title">Doom Patrol</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                        <div class="carrousel__slide">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/nuestra_bandera_es_de_muerte.png" alt="Nuestra Bandera es de Muerte">
+                            <p class="carrousel__slide-title">Nuestra Bandera es de Muerte</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                        <div class="carrousel__slide">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/rick_and_morty.png" alt="Rick and Morti">
+                            <p class="carrousel__slide-title">Rick and Morti</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="slide6">
-                    <img src="./images/Carrousel_cards/true_detective.png" alt="True Detective">
-                    <p>True Detective</p>
-                    <p>Ver gratis</p>
+                <div class="carousel-item">
+                    <div class="carrousel__slide">
+                        <div class="carrousel__container">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/the_last_of_us.png" alt="The Last of Us">
+                            <p class="carrousel__slide-title">The Last of Us</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                    </div>
                 </div>
-                
+
+                <div class="carousel-item">
+                    <div class="carrousel__container">
+                        <div class="carrousel__slide">
+                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/true_detective.png" alt="True Detective">
+                            <p class="carrousel__slide-title">True Detective</p>
+                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+    <div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" ariahidden="true">&gt;</span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+            
         </div>
-        <button>Ver Episodios Gratis</button>
+    </div>
+    
+    <div>
+        <button class="button-white">Ver Episodios Gratis</button>
+    </div>
+        
     </section>
 
     <!-- Platfoms Section -->
-    <section>
-        <h3>Una experiencia sencilla y completa</h3>
-        <p>Disponibilidad varía de acuerdo al plan.</p>
-        <img src="./images/platforms.png" alt="Platforms_img">
-        <div>
-            <p>Personaliza tu experiencia creando hasta 5 perfiles distintos por cuenta</p>
-            <p>Descarga tus historias preferidas para disfrutar offline donde quieras</p>
-            <p>Crea perfiles para los pequeños con contenido de acuerdo a su edad</p>
-            <p>Agrega tus títulos favoritos para verlos cuando quieras</p>
-        </div>    
+    <section class="container__text">
+        <h2 class="text">Una experiencia sencilla y completa</h2>
+        <p class="text_aclaration">Disponibilidad varía de acuerdo al plan.</p>
+        <img class="platform__img" src="./images/platforms.png" alt="Platforms_img">
+    <div class="container__text_flex">
+            <p class="text_info">Personaliza tu experiencia creando hasta 5 perfiles distintos por cuenta</p>
+            <p class="text_info">Descarga tus historias preferidas para disfrutar offline donde quieras</p>
+            <p class="text_info">Crea perfiles para los pequeños con contenido de acuerdo a su edad</p>
+            <p class="text_info">Agrega tus títulos favoritos para verlos cuando quieras</p> 
+    </div>    
+           
     </section>
 
     <!-- Kids Section -->
-    <section>
+    <section class="container__kids">
         <img src="./images/Kids/ben_10.png" alt="Ben10">
-        <p>Grandes opciones de entretenimiento para toda la familia</p>
+        <p class="text_info_kids">Grandes opciones de entretenimiento para toda la familia</p>
         <img src="./images/Kids/loony_toons.png" alt="LoonyToons">
     </section>
 
