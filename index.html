@@ -4,119 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver películas y series online | HBO Max Argentina</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="./carrousel.js"></script>
 </head>
 <body>
     <!-- Free Episodes Section -->
-    <section class="container__text">
-        <h2 class="text">Episodios gratis, sin necesidad de suscripción</h2>
+    <section class="section__container-title">
+        <h2 class="section__title">Episodios gratis, sin necesidad de suscripción</h2>
         
         <!-- CARROUSEL DE CARDS -->
-    <div class="container mt-5">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div class="carrousel__container">
+            <div class="carrousel__slide-container">
+                <div class="carrousel__slide">
+                    <img class="carrousel__slide-img" src="./images/Carrousel_cards/30_monedas.png" alt="30-monedas">
+                    <div class="carrousel__container-text">
+                        <p class="carrousel__slide-title">30 monedas</p>
+                        <p class="carrousel__slide-buttonlink">Ver gratis</p>
+                    </div>
+                    
+                </div>
 
-                <div class="carousel-item active">
-                    <div class="carrousel__container">
-                        <div class="carrousel__slide">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/30_monedas.png" alt="30-monedas">
-                            <p class="carrousel__slide-title">30 monedas</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
-                        <div class="carrousel__slide">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/doom_patrol.png" alt="Doom Patrol">
-                            <p class="carrousel__slide-title">Doom Patrol</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
-                        <div class="carrousel__slide">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/nuestra_bandera_es_de_muerte.png" alt="Nuestra Bandera es de Muerte">
-                            <p class="carrousel__slide-title">Nuestra Bandera es de Muerte</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
-                        <div class="carrousel__slide">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/rick_and_morty.png" alt="Rick and Morti">
-                            <p class="carrousel__slide-title">Rick and Morti</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
+                <div class="carrousel__slide">
+                    <img class="carrousel__slide-img" src="./images/Carrousel_cards/doom_patrol.png" alt="Doom Patrol">
+                    <div class="carrousel__container-text">
+                        <p class="carrousel__slide-title">Doom Patrol</p>
+                        <p class="carrousel__slide-buttonlink">Ver gratis</p>
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carrousel__slide">
-                        <div class="carrousel__container">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/the_last_of_us.png" alt="The Last of Us">
-                            <p class="carrousel__slide-title">The Last of Us</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
+                <div class="carrousel__slide">
+                    <img class="carrousel__slide-img" src="./images/Carrousel_cards/nuestra_bandera_es_de_muerte.png" alt="Nuestra Bandera es de Muerte">
+                    <div class="carrousel__container-text">
+                        <p class="carrousel__slide-title">Nuestra Bandera es de Muerte</p>
+                        <p class="carrousel__slide-buttonlink">Ver gratis</p>
                     </div>
                 </div>
-
-                <div class="carousel-item">
-                    <div class="carrousel__container">
-                        <div class="carrousel__slide">
-                            <img class="carrousel__slide-img" src="./images/Carrousel_cards/true_detective.png" alt="True Detective">
-                            <p class="carrousel__slide-title">True Detective</p>
-                            <p class="carrousel__slide-buttonlink">Ver gratis</p>
-                        </div>
+                
+                <div class="carrousel__slide">
+                    <img class="carrousel__slide-img" src="./images/Carrousel_cards/rick_and_morty.png" alt="Rick and Morti">
+                    <div class="carrousel__container-text">
+                        <p class="carrousel__slide-title">Rick and Morti</p>
+                        <p class="carrousel__slide-buttonlink">Ver gratis</p>
                     </div>
                 </div>
-
             </div>
-    <div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
-            <span class="sr-only">Anterior</span>
-        </a>
 
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" ariahidden="true">&gt;</span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-            
+            <svg width="14" height="25" viewBox="0 0 14 25" class="bi bi-chevron-compact-right carrousel__button-next" xmlns="http://www.w3.org/2000/svg" id="showroom--next">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.74023 12.227L0.520924 3.0077C-0.167129 2.31965 -0.167132 1.20409 0.520922 0.51604C1.20897 -0.172013 2.32453 -0.172013 3.01258 0.51604L13.4149 10.9184C13.4368 10.9382 13.4582 10.9586 13.4793 10.9796C14.1673 11.6677 14.1673 12.7832 13.4793 13.4713L3.0143 23.9363C2.32625 24.6243 1.21069 24.6243 0.522641 23.9363C-0.165412 23.2482 -0.165412 22.1327 0.522642 21.4446L9.74023 12.227Z"></path>
+            </svg>
+
         </div>
-    </div>
-    
-    <div>
-        <button class="button-white">Ver Episodios Gratis</button>
-    </div>
-        
+
+        <div class="container__button-white">
+            <button class="button-white">Ver Episodios Gratis</button>
+        </div>
+
     </section>
 
-    <!-- Platfoms Section -->
-    <section class="container__text">
-        <h2 class="text">Una experiencia sencilla y completa</h2>
+    <!-- Multiplescreen Section -->
+    <section class="section__container-title">
+        <h2 class="section__title">Una experiencia sencilla y completa</h2>
         <p class="text_aclaration">Disponibilidad varía de acuerdo al plan.</p>
         <img class="platform__img" src="./images/platforms.png" alt="Platforms_img">
     <div class="container__text_flex">
+        <div class="col-3">
+            <hr class="div_magenta">
             <p class="text_info">Personaliza tu experiencia creando hasta 5 perfiles distintos por cuenta</p>
+        </div>
+
+        <div class="col-3">
+            <hr class="div_magenta">
             <p class="text_info">Descarga tus historias preferidas para disfrutar offline donde quieras</p>
+        </div>
+
+        <div class="col-3">
+            <hr class="div_magenta">
             <p class="text_info">Crea perfiles para los pequeños con contenido de acuerdo a su edad</p>
+        </div>
+
+        <div class="col-3">
+            <hr class="div_magenta">
             <p class="text_info">Agrega tus títulos favoritos para verlos cuando quieras</p> 
+        </div>
+
     </div>    
            
     </section>
 
     <!-- Kids Section -->
     <section class="container__kids">
-        <img src="./images/Kids/ben_10.png" alt="Ben10">
+        <img class="kids__img" src="./images/Kids/ben_10.png" alt="Ben10">
         <p class="text_info_kids">Grandes opciones de entretenimiento para toda la familia</p>
-        <img src="./images/Kids/loony_toons.png" alt="LoonyToons">
+        <img class="kids__img" src="./images/Kids/loony_toons.png" alt="LoonyToons">
     </section>
 
     <!-- Universe Section -->
-    <section>
-        <p>Muchos universos por descubrir</p>
-        <div>
-            <img src="./images/Universe_cards/card_universe_HBO.png" alt="HBO_Universe">
-            <img src="./images/Universe_cards/card_universe_max.png" alt="Max_Universe">
-            <img src="./images/Universe_cards/card_universe_DC.png" alt="DC_Universe">
-            <img src="./images/Universe_cards/card_universe_Warner.png" alt="Warner_Universe">
-            <img src="./images/Universe_cards/card_universe_CN.png" alt="CN_Universe">        
+    <section class="section__container-title"> 
+        <h2 class="section__title universe-title">Muchos universos por descubrir</h2>
+
+        <div class="img__container">
+
+            <div class="img__slide">
+                <img class="capa" src="/images/Universe_cards/card_universe_HBO.png" alt="HBO_Universe">
+                <img class="img" src="./images/Universe_cards/card_universe_HBO__hover.png" alt="HBO_Universe_Hoover">
+            </div>
+
+            <div class="img__slide">
+                <img class="capa" src="./images/Universe_cards/card_universe_max.png" alt="Max_Universe">
+                <img class="img" src="./images/Universe_cards/card_universe_max__hover.png" alt="Max_Universe_Hoover">
+            </div>
+
+            <div class="img__slide">
+                    <img class="capa" src="./images/Universe_cards/card_universe_DC.png" alt="DC_Universe">
+                    <img class="img" src="./images/Universe_cards/card_universe_DC__hover.png" alt="DC_Universe_Hoover">
+            </div>
+
+            <div class="img__slide">
+                <img class="capa" src="./images/Universe_cards/card_universe_Warner.png" alt="Warner_Universe">
+                <img class="img" src="./images/Universe_cards/card_universe_Warner__hover.png" alt="Warner_Universe_Hoover">
+            </div>
+
+            <div class="img__slide">
+                <img class="capa" src="./images/Universe_cards/card_universe_CN.png" alt="CN_Universe">
+                <img class="img" src="./images/Universe_cards/card_universe_CN__hover.png" alt="CN_Universe_Hoover"> 
+            </div>
+
         </div>
-        <button>Suscríbete ahora</button>
+
+        <button class="button-magenta">Suscríbete ahora</button>
     </section>
 </body>
 </html>
